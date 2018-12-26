@@ -52,10 +52,6 @@ body {
   color:#2eb6f3;
 }
 
-.nav-link-l {
-text-decoration: none;
-color:#2eb6f3;
-}
 
 main{
   font-size: 0;
@@ -93,6 +89,7 @@ margin: 0 60px 58px 0;
 .article-text {
   text-transform: uppercase;
   font-size: 14px;
+  color: #b4ad9e;
   margin: 0 0 20px 0;
   font-size: 14px;
   font-family:'Ubuntu', sans-serif;
@@ -107,7 +104,6 @@ margin: 0 60px 58px 0;
   line-height: auto;
 }
 
-<header class="header">
 .text_link {
 font-size: 14px;
 font-family:'Playfair Display', serif;
@@ -115,10 +111,10 @@ line-height: 24px;
 }
 
 .input {
-  pcursor:pointer;
   display:block;
   height:60px;
   width:150px;
+  color: #626262;
   line-height: 24px;
   font-size: 20px;
   text-align:center;
