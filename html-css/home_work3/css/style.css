@@ -52,6 +52,11 @@ body {
   color:#2eb6f3;
 }
 
+.nav-link-l {
+text-decoration: none;
+color:#2eb6f3;
+}
+
 main{
   font-size: 0;
   margin: 0 0 30px 0;
@@ -106,7 +111,7 @@ margin: 0 60px 58px 0;
 .text_link {
 font-size: 14px;
 font-family:'Playfair Display', serif;
-line-height: auto;
+line-height: 24px;
 }
 
 .input {
@@ -118,9 +123,10 @@ line-height: auto;
   font-size: 20px;
   text-align:center;
   margin: auto;
-  border: 1px solid #626262;s
+  border: 1px solid #303134;
   background: transparent;
   cursor: pointer;
+  font-family:'Playfair Display', serif;
 }
 
  
