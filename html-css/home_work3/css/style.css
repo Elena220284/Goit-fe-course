@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300')
+
+
+body {
+  font-size: 14px;
+  font-family:'Playfair Display',serif;
+  color: #626262;
+}
 
 * {
   margin: 0;
@@ -19,6 +24,7 @@
 
 .nav-list {
   text-align: center;
+  font-size: 0px;
 }
 
 .list_one {
@@ -26,23 +32,20 @@
   display: inline-block;
   margin: 0 80px 0 0;
   text-transform: uppercase;
+  font-size: 14px;
   
 }
 
 .list_one:last-child {
   margin: 0 0 0 0;
 }
-/* .nav_link {
-  text-decoration: none;
-  color:#2eb6f3
-} */
 
 .nav-link {
   text-decoration: none;
   color: #404142;
   font-size: 14px;
   line-height: 24px;
-  font-family:'Playfair Display',serif;
+  font-family:'Playfair Display', serif;
 }
 
 .nav-link:hover {
@@ -51,25 +54,40 @@
 
 main{
   font-size: 0;
+  margin: 0 0 30px 0;
 }
 
 .article_line {
   display: inline-block;
-  width: 400px;
+  width: 420px;
   vertical-align: top;
-  margin: 0 50px 0 0;
+  margin: 0 30px 0 0;
   font-size: 14px;
+  margin: 0 60px 134px 0;
+
 }
+
+.article_line:nth-child(even) {
+  margin: 0 0 0 0;
+}
+
+.article_line:nth-child(5){
+margin: 0 60px 58px 0;
+}
+
+.article_line:nth-child(6){
+  margin: 0 0 58px 0;
+  }
  
 .image {
-  color: #514843;
   margin: 0 0 20px 0;
+  max-width: 100%;
+  height: auto;
 }
 
 .article-text {
   text-transform: uppercase;
   font-size: 14px;
-  opacity: 0.4;
   margin: 0 0 20px 0;
   font-size: 14px;
   font-family:'Ubuntu', sans-serif;
@@ -77,18 +95,17 @@ main{
 }
 
 .headline {
-  opacity: 0.7;
   margin: 0 0 20px 0;
   font-size: 30px;
   font-weight: normal;
-  font-family:'Playfair Display',serif;
+  font-family:'Playfair Display', serif;
   line-height: auto;
 }
 
+<header class="header">
 .text_link {
 font-size: 14px;
-font-family:'Playfair Display',serif;
-opacity: 0.8;
+font-family:'Playfair Display', serif;
 line-height: auto;
 }
 
@@ -101,18 +118,11 @@ line-height: auto;
   font-size: 20px;
   text-align:center;
   margin: auto;
+  border: 1px solid #626262;s
+  background: transparent;
+  cursor: pointer;
 }
 
- first-child {
-
- }
-
- last-child {
-
- }
-
- nth-child{
-   
- }
+ 
   
  
