@@ -22,8 +22,6 @@
 
 .logo {
   float: left;
-  font-size: 30px;
-  line-height: 32px;
   font-family: 'Roboto', sans-serif;
   color: #555252;      
   text-transform: uppercase;
@@ -32,6 +30,10 @@
   margin: 0;
   /* padding-top: 40px; */
   display:block;
+}
+
+h1 {
+  font-size: 30px;
 }
 
 .name::first-letter {
@@ -52,15 +54,16 @@
 h1{
   margin:0 0 0 0;
 }
-/* 
-.nav-list clearfix{ 
-  font-size: 0;
-  } */
+
 
 .list_one {
   list-style: none;
   float: right;
-  margin-left: 30px;
+  margin: 0 30px 0 0;
+}
+
+.list_one:first-child {
+  margin: 0 0 0 0px;
 }
   
 li{ 
@@ -96,6 +99,7 @@ font-weight: 900;
 line-height: 32px;
 text-transform: uppercase;
 color: #515151;
+margin-bottom: 133px;
 }
 
 .section-title::after{
@@ -108,20 +112,23 @@ color: #515151;
 }
 
 
-/* .featured clearfix {
-  font-size: 0;
-} */
  img {
    display: block; 
    height: auto;
-   max-width: 100%; 
- } 
-
+   max-width: 100%;
+   /* filter: grayscale(1); */
+ }
 
 .featured-photo {
   list-style: none;
   float:left;
-  margin-left: 30px;
+  margin: 0 30px 30px 0;
+  height: 322px;
+  width: 255px ;
+}
+
+/* .featured-photo: hover .img{
+  filter: grayscale(0); */
 }
 
 
