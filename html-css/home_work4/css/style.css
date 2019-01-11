@@ -104,15 +104,15 @@ margin-bottom: 133px;
 
 .section-title::after{
   content:"";
-  display:inline-block;
+  display:block;
   background-color: #1abc9c;
-  /* margin: 0 auto; */
-  height: 7px ;
-  width:164px ;
-}
+  margin: 0 auto;
+  height:7px ;
+  width: 164px ;
+  }
 
 
- img {
+.image {
    display: block; 
    height: auto;
    max-width: 100%;
@@ -127,9 +127,9 @@ margin-bottom: 133px;
   width: 255px ;
 }
 
-/* .featured-photo: hover .img{
-  filter: grayscale(0); */
-}
+ /* .featured-photo: hover.image {
+  filter: grayscale(0); 
+}   */
 
 
 .imet-title {
@@ -138,6 +138,8 @@ margin-bottom: 133px;
   font-size: 18px;
   line-height: 32px;
   font-weight: 900;
+  width: 202px;
+  height: 40px;
   color: #ffffff;
   background-color: #323232;
 }
@@ -148,6 +150,8 @@ margin-bottom: 133px;
   font-size: 18px;
   line-height: 32px;
   font-weight: 900;
+  width: 54px;
+  height: 40px;
   color: #ffffff;
   background-color:#8c8c8c;
 }
