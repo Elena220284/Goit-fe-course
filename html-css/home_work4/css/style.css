@@ -10,17 +10,12 @@
 }
 
 .text-header {
-  /* margin: 20px 0 0 0; */
   margin: 0 0 113px 0;
   padding-top: 40px; 
   }
 
-  .header-nav {
-    /* margin: 0 0 113px 0;
-    padding-top: 40px; */
-  }
 
-.logo {
+.logo {ее
   float: left;
   font-family: 'Roboto', sans-serif;
   color: #555252;      
@@ -28,7 +23,6 @@
   font-weight: 300;
   text-decoration: none;
   margin: 0;
-  /* padding-top: 40px; */
   display:block;
 }
 
@@ -80,7 +74,6 @@ margin-top: 8px;
   text-transform: uppercase;
 }
 
-
 .nav-link:hover{
 color: #1abc9c
 }
@@ -104,10 +97,11 @@ margin-bottom: 133px;
 
 .section-title::after{
   content:"";
+  border-bottom: 7px solid #1abc9c;
   display:block;
-  background-color: #1abc9c;
   margin: 0 auto;
-  height:7px ;
+  margin-top: 32px;
+  /* height:7px ; */
   width: 164px ;
   }
 
@@ -116,46 +110,66 @@ margin-bottom: 133px;
    display: block; 
    height: auto;
    max-width: 100%;
-   /* filter: grayscale(1); */
  }
 
 .featured-photo {
   list-style: none;
   float:left;
-  margin: 0 30px 30px 0;
   height: 322px;
   width: 255px ;
+  background-color: #e9f0fd;
+
 }
 
- /* .featured-photo: hover.image {
-  filter: grayscale(0); 
-}   */
+.featured-photo:not(:nth-child(4n)){
+  margin-right: 30px;
+}
+
+.featured-photo:not(:nth-last-child(-n+4)) {
+  margin-bottom: 30px;
+}
+
+
+.title-name  {
+  background: #323232;
+  padding-left: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  transition: .2s;
+}
+
+
+
+.featured-photo:hover .title-name {
+  background-color: #1abc9c;
+  cursor: pointer;
+}
 
 
 .imet-title {
   float:left;
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 40px;
   font-weight: 900;
-  width: 202px;
   height: 40px;
   color: #ffffff;
-  background-color: #323232;
+  margin: 0 auto;
 }
 
 .price-title {
   float: right;
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 40px;
   font-weight: 900;
   width: 54px;
   height: 40px;
   color: #ffffff;
-  background-color:#8c8c8c;
+  background: rgba(255, 255, 255, 0.44) ;
+  text-align: center;
 }
-
+ 
 .section-news {
 font-size: 48px;
 text-align: center;
