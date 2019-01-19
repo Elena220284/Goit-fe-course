@@ -9,6 +9,12 @@
   margin: 0 auto;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .text-header {
   margin: 0 0 113px 0;
   padding-top: 40px; 
@@ -24,6 +30,11 @@
   text-decoration: none;
   margin: 0;
   display:block;
+}
+
+.header-nav {
+  float: right;
+  margin-top:8px;
 }
 
 h1 {
@@ -55,14 +66,19 @@ h1{
 
 .list_one {
   list-style: none;
-  float: right;
-  margin: 0 30px 0 0;
+  float: left;
+  /* margin: 0 30px 0 0; */
+}
+/* 
+.list_one:last-child {
+  margin: 0 0 0 0px;
+} */
+  
+
+.list_one:not(:last-child){
+    margin: 0 30px 0 0;
 }
 
-.list_one:first-child {
-  margin: 0 0 0 0px;
-}
-  
 .nav-link {
   text-decoration: none;
   color: #0f0101;
@@ -84,14 +100,14 @@ color: #1abc9c
 }
   
 .section-title {
-font-size: 48px;
-text-align: center;
-font-family: 'Roboto', sans-serif;
-font-weight: 900;
-line-height: 32px;
-text-transform: uppercase;
-color: #515151;
-margin-bottom: 133px;
+ font-size: 48px;
+ text-align: center;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 900;
+ line-height: 32px;
+ text-transform: uppercase;
+ color: #515151;
+ margin-bottom: 133px;
 }
 
 .section-title::after{
@@ -100,10 +116,8 @@ margin-bottom: 133px;
   display:block;
   margin: 0 auto;
   margin-top: 32px;
-  /* height:7px ; */
   width: 164px ;
   }
-
 
 .image {
    display: block; 
@@ -119,10 +133,8 @@ margin-bottom: 133px;
 .featured-photo {
   list-style: none;
   float:left;
-  height: 322px;
   width: 255px ;
   background-color: #e9f0fd;
-
 }
 
 .featured-photo:not(:nth-child(4n)){
@@ -202,12 +214,9 @@ margin-bottom: 133px;
     float:left;
     list-style: none;
     width: 350px;
-    min-height: 495px;
   }
 
   .image1 {
-    height: 262px;
-    width: 348px ;
     margin: 0 0 18px 0;
   }
   
@@ -244,11 +253,11 @@ margin-bottom: 133px;
     margin: 0 0 19px 0;
    }
 
-   .input {
-    display:block;
+   .read {
+    display:inline-block;
     min-height: 51px;
     min-width: 159px;
-    list-style: none;
+    text-decoration: none;
     border:none;
     text-align:center;
     color:#e9f0fd;
@@ -258,8 +267,9 @@ margin-bottom: 133px;
     background-color: #4ec6ab;
     cursor: pointer;
     border-radius: 3px;
+    line-height: 51px;
    }
 
-   .input:hover {
+   .read:hover {
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
    }
