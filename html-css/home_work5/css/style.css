@@ -146,8 +146,10 @@ background-color: rgb(26, 188, 156);
 }
  
 .button:hover{
-color:#1abc9c;
+ opacity: 0.651;
+cursor: pointer;
 }
+
 .button-left{
 left:0;
 }
@@ -212,16 +214,10 @@ margin-top: 32px;
 width: 164px ;
 }
 
-
-
 .image-cont{
   position: relative;
 }
 
-  /* .photo-list:hover.img-overlay{
-  opacity: 0.549;
-  }   */
-    
   .image {
     display: block; 
     height: auto;
@@ -235,11 +231,7 @@ width: 164px ;
   right: 10px;
   bottom: 50px;
   background-color: rgba(0, 0, 0, 0.55);
- }
-
-
- .icons-i{
-   display:inline-block; 
+  display: none;
  }
 
  .icons{
@@ -248,56 +240,44 @@ width: 164px ;
    left: 50%;
    transform: translate(-50%, -50%);
    font-size:0;
+   width: 100%;
+   text-align: center;
  }
+
  .icon-heart{
-  /* position: absolute; */
   background-repeat: no-repeat;
   background-position: center;
-  /* top:80px;
-  left:33px; */
-  /* transform: translate(-50%, -50%); */
   width: 50px;
   height:50px;
-  /* display: block; */
   font-size: 14px;
   display: inline-block;
-  background-image: url(img/like.png);
+  background-image: url(../img/like.png);
   background-color: transparent;
   border: 1px solid;
   border-color:#ffffff;
  }
 
  .icon-nav{
-  /* position: absolute; */
   background-repeat: no-repeat;
   background-position: center;
-  /* top:80px;
-  left:92px; */
-  /* transform: translate(50%, 50%); */
   width: 50px;
   height: 50px;
-  /* display: block; */
   font-size: 14px;
   display: inline-block;
-  background-image: url(img/nav.png);
+  background-image: url(../img/nav.png);
   background-color: transparent;
   border: 1px solid;
   border-color:#ffffff;
  }
 
  .icon-time {
-  /* position: absolute; */
   background-repeat: no-repeat;
   background-position: center;
-  /* top:80px;
-  left:150px; */
-  /* transform: translate(50%, 50%); */
   width: 50px;
   height:50px;
-  /* display: block; */
   font-size: 14px;
   display: inline-block;
-  background-image: url(img/time.png);
+  background-image: url(../img/time.png);
   background-color: transparent;
   border: 1px solid;
   border-color:#ffffff;
@@ -305,36 +285,41 @@ width: 164px ;
  }
  
  .icon_truck {
-  /* position: absolute; */
   background-repeat: no-repeat;
-  background-position: center;
-  /* top: 137px;
-  left: 33px; */
+  background-position: 12px 50%;
   width: 166px;
   height: 50px;
   display: inline-block;
   font-size: 14px;
-  background-image: url(img/truck.png);
+  background-image: url(../img/truck.png);
   background-color:#323232;
   border: 1px solid;
   border-color:#ffffff;
+  padding-left: 40px;
+  color:#ffffff;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
  }
 
+ .icon-in{
+   margin-bottom: 8px;
+ }
 
-.icons-l{
-  float: left;
-  padding-left: 12px;
+ .icon-in:hover {
+  background-color: #1abc9c;
+  cursor: pointer;
+ }
+
+ .icon-in:hover {
+  background-color: #1abc9c;
+  cursor: pointer;
+ }
+
+.icon-in:not(:last-child){
+  margin-right:8px;
 }
 
-.text-l {
-  float: right;
-  text-transform: uppercase;
-  padding:0 17px 0 0;
-  color:#ffffff;
-  font-family: 'Open Sans', sans-serif;
-  font-size:14px;
 }
-
   .featured{
     list-style: none;
   }
@@ -353,6 +338,11 @@ width: 164px ;
 .featured-photo:hover .title-name {
   background-color: #1abc9c;
   cursor: pointer;
+}
+
+.featured-photo:hover .overlay{
+display: block;
+cursor: pointer;
 }
 
   .title-name  {
@@ -411,3 +401,13 @@ color: #46bfa9;
 
 
 
+.Rectangle_5 {
+  background-color: rgb(78, 198, 171);
+  opacity: 0.651;
+  position: absolute;
+  left: 245px;
+  top: 316px;
+  width: 104px;
+  height: 104px;
+  z-index: 89;
+}
