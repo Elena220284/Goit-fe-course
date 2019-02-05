@@ -24,6 +24,7 @@ display: block;
 
 .header-container {
 margin-bottom: 130px;
+padding-top: 28px;
 }
 
 .container{
@@ -33,15 +34,17 @@ align-items: center;
 line-height: 50px;
 }
 
-.logo {
+.logo{
 text-decoration: none;
+}
+.name-logo{
 font-weight: 700;
 font-size: 30px;
-/* line-height:36px; */
+line-height:36px;
 font-family:'Montserrat', sans-serif;
 color: #95e1d3;
+text-decoration: none;
 margin: 0;
-
 }
 
 .nav-list{
@@ -95,7 +98,7 @@ justify-content: space-between;
 .nav-link:hover::after{
  display:block;
  background-color: rgb(243, 129, 129);
-transition: color 2s linear;
+ transition: color 2s linear;
 } 
 
 .title-services{
@@ -139,12 +142,9 @@ justify-content: space-between;
 margin-bottom: 94px;
 }
 
-
-
 .features-list{
 padding-left: 80px;
 width:380px;
-
 }
 
 .features-list:not(:nth-last-child(-n+3)) {
@@ -256,6 +256,8 @@ flex-wrap: wrap;
 list-style: none;
 justify-content: space-between;
 margin-bottom: 83px;
+/* border-bottom: 1px solid #cccccc;
+height: 83px;; */
 }
 
 .image{
@@ -273,12 +275,20 @@ font-weight:400;
 font-family: 'Montserrat', sans-serif;
 color: #333333;
 text-transform: uppercase;
+margin-bottom: 12px;
 }
 
 .signature{
 font-size:15px;
 line-height:24px;
+font-weight: 300;
 font-family: 'Roboto', sans-serif;
+font-style: italic;
+}
+
+.footer{
+border-top: 1px solid #cccccc;
+height:26px;
 }
 
 .footer-container{
@@ -286,9 +296,51 @@ display: flex;
 flex-wrap: wrap;
 list-style: none;
 justify-content: space-between;
+text-align: center;
 font-weight:300;
 color: #999999;
 }
 
 .footer-text{
+text-align: center;
+color: #333333;
+font-size:14px;
+line-height:17px;
+font-weight:400;
+font-family: 'Montserrat', sans-serif;
+}
+
+.allotment{
+text-decoration:none;
+color:#f38181;
+}
+
+.input-item{
+font-size: 0;
+line-height: 63px;
+}
+
+.input{
+font-size: 15px;
+color:#cccccc;
+line-height:24px;
+font-family: 'Roboto', sans-serif;
+font-style: italic;
+font-weight:300;
+height:39px;
+width: 229px;
+}
+
+.button{
+font-size:14px;
+color: #ffffff;
+line-height:17px;
+background-color:#95e1d3;
+font-family: 'Montserrat', sans-serif;
+font-weight:700;
+height: 39px;
+width: 150px;
+text-transform: uppercase;
+border: none;
+cursor: pointer;
 }
