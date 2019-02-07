@@ -261,8 +261,47 @@ height: 83px;; */
 }
 
 .image{
-  margin-bottom:30px;
+display: block; 
+height: auto;
+max-width: 100%;
+margin-bottom:30px;
 }
+
+.image-cont{
+position: relative;
+}
+
+.overlay{ 
+/* position: absolute;
+top: 10px;
+left: 10px;
+width: 100%; 
+min-height: 470px;
+background-color: rgb(149, 225, 211); */
+
+/* display: none; */
+
+
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-image:linear-gradient( 0deg, rgba(252, 227, 138, 0.9), rgba(243,129,129, 0.9));
+}
+
+.overlay::before{
+  /* content:""; */
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 100%;
+  min-height: 470px;
+  background-image:linear-gradient( 0deg, rgba(252, 227, 138, 0.9), rgba(243,129,129, 0.9));
+  /* background: rgb(243, 129, 129); */
+
+  /* display: none; */
+  }
 
 .text{
   text-align: center;
@@ -288,7 +327,7 @@ font-style: italic;
 
 .footer{
 border-top: 1px solid #cccccc;
-height:26px;
+padding: 10px 0 10px 0;
 }
 
 .footer-container{
@@ -296,7 +335,7 @@ display: flex;
 flex-wrap: wrap;
 list-style: none;
 justify-content: space-between;
-text-align: center;
+align-items: center;
 font-weight:300;
 color: #999999;
 }
@@ -317,7 +356,6 @@ color:#f38181;
 
 .input-item{
 font-size: 0;
-line-height: 63px;
 }
 
 .input{
@@ -344,3 +382,67 @@ text-transform: uppercase;
 border: none;
 cursor: pointer;
 }
+
+.icons{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 100%; */
+  /* align-items:center;
+  justify-content: center; */
+  /* margin: auto; */
+}
+
+.icons-img{
+  display: flex;
+  background-color:#fce38a;
+  width: 56px;
+  height: 56px;
+  list-style: none;
+}
+
+.icons-img:hover{
+  background-color: #95e1d3;
+}
+
+.icons-img:not(:last-child){
+  margin: 0 1px 0 0;
+}
+
+.sprite {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display:block;
+  margin: auto;
+ 
+}
+
+
+.sprite-facebook {
+  width: 13px;
+  height: 26px;
+  background-position: -5px -5px;
+}
+
+.sprite-twitter {
+  width: 26px;
+  height: 22px;
+  background-position: -5px -85px;
+}
+
+.sprite-pinterest {
+  width: 21px;
+  height: 26px;
+  background-position: -81px -45px;
+}
+
+.sprite-instagram {
+  width: 26px;
+  height: 26px;
+  background-position: -5px -45px;
+}
+
+
+
