@@ -259,6 +259,11 @@ justify-content: space-between;
 margin-bottom: 83px;
 }
 
+.features-photo{
+  width: 380px;
+}
+
+
 .features-photo:hover .overlay{
 opacity: 1;
  }
@@ -272,6 +277,8 @@ box-shadow: 10px 10px 0px 0px rgb(149, 225, 211);
 .image-cont{
 position: relative;
 transition:0.5s;
+top: 0;
+left: 0;
 }
 
 .image{
