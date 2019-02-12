@@ -1,0 +1,131 @@
+@import "./vars.css";
+
+/* body{
+font-family: var(--main-font);
+} */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ 
+/* body{
+ background: red;
+} */
+
+.wrapper {
+width: 940px;
+margin:0 auto;
+}
+
+img{
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+.header-container {
+  margin-bottom: 128px;
+  padding-top: 50px;
+}
+
+.container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+line-height: 50px;
+}
+
+.logo{
+text-decoration: none;
+}
+
+.name-logo{
+font-weight: 400;
+font-size: 26px;
+line-height:41px;
+font-family:'Wisdom Script';
+color: var(--semi-bg-color);
+text-decoration: none;
+margin: 0;
+}
+
+.nav-list{
+display: flex;
+list-style: none;
+width: 491px;
+/* min-height: 50px; */
+/* align-items: center; */
+justify-content: space-between;
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  font-family: var(--main-font);
+  color:var(--text-font-color);
+  font-size:var(--semi-text-size);
+  line-height:41px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition:.2s;
+}
+
+ .nav-link:hover{
+  color: var(--semi-bg-color);
+  transition:2s;
+  }
+
+/* .nav-link:hover::after{
+ display:block;
+ background-color: rgb(243, 129, 129);
+ transition: color 2s linear;
+}  */
+
+.section-intro{
+font-size:40px;
+font-family: var(--main-font);
+line-height:75px;
+font-weight:700;
+text-align: center;
+color:var(--text-font-color);
+text-transform: uppercase;
+}
+
+.section-tittle {
+display: block;
+font-size:16px;
+font-family: 'Droid Serif', arial;
+line-height:19px;
+font-weight:Italic;
+text-align: center;
+color:#777777;
+padding-top:20px;
+}
+
+.sprite {
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-Icon-Basket {
+  width: 40px;
+  height: 39px;
+  background-position: -5px -5px;
+}
+
+.sprite-Icon-Laptop {
+  width: 41px;
+  height: 35px;
+  background-position: -55px -5px;
+}
+
+.sprite-Icon-Locked {
+  width: 29px;
+  height: 38px;
+  background-position: -55px -50px;
+}
+
