@@ -1,0 +1,20 @@
+
+@font-face {
+    font-family: 'RobotoLight';
+    font-style: normal;
+    font-weight: normal;
+  src: url('../fonts/roboto-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v18-latin-300.woff') format('woff'), /* Modern Browsers */
+     
+  }
+
+
+  @font-face {
+    font-family: 'MontserratBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/MontserratBold/montserrat-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/MontserratBold/montserrat-v12-latin-700.woff') format('woff'); /* Modern Browsers */    
+  }
+
+       
