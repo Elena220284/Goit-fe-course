@@ -1,6 +1,5 @@
 @import "./vars.css";
 @import "./fonts.css";
-@import "./media.css";
 
 
 *{
@@ -45,17 +44,12 @@ display: flex;
 justify-content:center;
 }
 
-.title-services{
-  margin-bottom: 70px;
-}
-
 .login_link{
   font-size: 14px;
   line-height:17px;
   text-align: center;
   color: var( --text-font-link);
   font-family: 'MontserratBold', 'sans-serif';
-  /* border: 2px solid  var( --text-font-link); */
   box-shadow:0 0 0 2px var( --text-font-link);
   border-radius: 40px;
   padding: 10px 16px;
@@ -66,18 +60,16 @@ justify-content:center;
  box-shadow:0 0 0 2px var(--text-font-link);
 }
 
-.background-img_photo{
+.title-services{
+margin-bottom: 70px;
 background-image:url(../img/bacground.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 background-color: #1a1915;
-
-}
-
-.title-text{
 padding: 171px 0 137px 0;
 }
+
 
 .mobile-logo-text{
 margin-bottom: 40px;
@@ -118,12 +110,12 @@ color: var( --text-font-link);
 text-align: center;
 margin-bottom: 20px;
 }
-
-.button{
-display: block;
-font-size: 14px;
-line-height: 17px;
+.button_link{
+display:block;
+font-size: var(--semi-text-size);
+line-height: 40px;
 font-family: 'MontserratBold', 'sans-serif';
+text-align: center;
 color: var(--text-font-link);
 background-color: #ff4e50;
 height:40px;
@@ -133,6 +125,9 @@ border: none;
 margin: 0 auto;
 }
 
+.title-partner{
+  padding-bottom: 40px;
+}
 
 .section-intro-link{
 font-size: 22px;
@@ -173,111 +168,79 @@ font-family:'RobotoLight','sans-serif';
 color: var(--text-font-color);
 text-align: center;
 }
-
-
- /* .button2{
+.button{
   display: block;
   font-size: 14px;
   line-height: 17px;
   font-family: 'MontserratBold', 'sans-serif';
-  color: var(--text-font-link);
+  color: var(--color-br-img);
   background-color: transparent;
   height:40px;
   width: 280px;
   border-radius:40px;
-  border: none;
+  border: 2px solid var(--color-br-img);
   margin: 0 auto;
-}  */
+}  
 
 
 .image{
   border-radius: 50%;
 }
 
-.sprite {
+.photo-partner-link::before{
+  content: '';
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
   display: block;
+  top: 70%;
+  left: 60%;
+  width: 32px;
+  height:32px;
+  border-radius:50%;
 }
 
-.sprite-Shape-128 {
- 
-  width: 16px;
-  height: 16px;
-  background-position: -45px -45px;
-}
-
-.sprite-Shape-128::before{
+.sprite-shape-128::before{
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(50%,50%);
-  background-repeat: no-repeat;
   background-color: #ff4e50;
-  width: 32px;
-  height:32px;
-  border-radius:50%;
   border:4px solid var( --text-font-link);
+  background-position: -35px -37px;
 }
 
-.sprite-Shape-153 {
-  width: 16px;
-  height: 17px;
-  background-position: -151px -45px;
-}
 
-.sprite-Shape-153::before{
+.sprite-shape-153::before{
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(50%,50%);
-  background-repeat: no-repeat;
   background-color:#ffa507;
-  width: 32px;
-  height:32px;
-  border-radius:50%;
   border:4px solid var( --text-font-link);
+  background-position: -245px -36px;
 }
 
-.sprite-Shape-155 {
-  width: 13px;
-  height: 16px;
-  background-position: -257px -45px;
-}
-
-.sprite-Shape-155::before{
+.sprite-shape-155::before{
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(50%,50%);
-  background-repeat: no-repeat;
   background-color:#1cd7ad;
   width: 32px;
   height:32px;
-  border-radius:50%;
   border:4px solid var( --text-font-link);
+  background-position: -245px -36px;
 }
 
-.sprite-Shape-170 {
-  width: 17px;
-  height: 16px;
-  background-position: -45px -152px;
-}
-
-.sprite-Shape-170::before{
+.sprite-shape-170::before{
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(50%,50%);
-  background-repeat: no-repeat;
   background-color:#4e73db;
-  width: 32px;
-  height:32px;
-  border-radius:50%;
-  border:4px solid var( --text-font-link);
+  border:4px solid var(--text-font-link);
+  background-position: -37px -142px;
 }
 
+@media screen and (min-width: 748px){
+  .container {
+      width:748px;
+  }
+/* 
+  .header-container{
+  padding: 36px 0 0 0;
+  } */
+
+  
