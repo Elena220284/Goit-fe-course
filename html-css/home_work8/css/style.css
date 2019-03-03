@@ -148,26 +148,28 @@ margin-bottom: 20px;
 }
 
 .photo-partner_item{
-  margin-bottom: 31px;
+  list-style: none;
+  margin:0 30px 30px 30px;
 }
 
 .photo-partner-link{
+position: relative;
 margin-bottom: 20px;
 }
 
 .photo-name{
-font-size: 14px;
+font-size:var(--semi-text-size);
 line-height:17px;
-font-family: 'MontserratBold', 'sans-serif';
+font-family: 'MontserratBold','sans-serif';
 color: var(--text-font-line);
 text-align: center;
 margin-bottom: 16px;
 }
 
 .text-name{
-font-size: 14px;
+font-size:var(--semi-text-size);
 line-height:17px;
-font-family: 'RobotoLight','sans-serif';
+font-family:'RobotoLight','sans-serif';
 color: var(--text-font-color);
 text-align: center;
 }
@@ -187,11 +189,10 @@ text-align: center;
   margin: 0 auto;
 }  */
 
-/* .photo-1{
-border-radius: 50%;
-  
-} */
 
+.image{
+  border-radius: 50%;
+}
 
 .sprite {
   background-image: url(../img/spritesheet.png);
@@ -200,9 +201,24 @@ border-radius: 50%;
 }
 
 .sprite-Shape-128 {
+ 
   width: 16px;
   height: 16px;
   background-position: -45px -45px;
+}
+
+.sprite-Shape-128::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%,50%);
+  background-repeat: no-repeat;
+  background-color: #ff4e50;
+  width: 32px;
+  height:32px;
+  border-radius:50%;
+  border:4px solid var( --text-font-link);
 }
 
 .sprite-Shape-153 {
@@ -211,15 +227,57 @@ border-radius: 50%;
   background-position: -151px -45px;
 }
 
+.sprite-Shape-153::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%,50%);
+  background-repeat: no-repeat;
+  background-color:#ffa507;
+  width: 32px;
+  height:32px;
+  border-radius:50%;
+  border:4px solid var( --text-font-link);
+}
+
 .sprite-Shape-155 {
   width: 13px;
   height: 16px;
   background-position: -257px -45px;
 }
 
+.sprite-Shape-155::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%,50%);
+  background-repeat: no-repeat;
+  background-color:#1cd7ad;
+  width: 32px;
+  height:32px;
+  border-radius:50%;
+  border:4px solid var( --text-font-link);
+}
+
 .sprite-Shape-170 {
   width: 17px;
   height: 16px;
   background-position: -45px -152px;
+}
+
+.sprite-Shape-170::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%,50%);
+  background-repeat: no-repeat;
+  background-color:#4e73db;
+  width: 32px;
+  height:32px;
+  border-radius:50%;
+  border:4px solid var( --text-font-link);
 }
 
