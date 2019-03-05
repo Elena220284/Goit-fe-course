@@ -19,7 +19,6 @@
     }
 
     .header-flex{
-        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
@@ -60,7 +59,6 @@
     .section-intro{
         font-size: 52px;
         line-height: 62px;
-        text-transform: uppercase;
         margin-bottom: 40px;
     }
       
@@ -74,10 +72,7 @@
     }
       
     .photo-partner{
-      display: flex;
-      flex-wrap: wrap;
       flex-direction: row;
-      /* justify-content: space-between; */
       margin: 0 auto;
       justify-content:center; 
       margin-bottom:40px; 
@@ -146,8 +141,7 @@
     .photo-partner{
         width: 100%;
         justify-content: space-between;
-        flex-wrap: wrap;
-        flex-direction: row;
+     
     }
 
     .photo-partner_item{
