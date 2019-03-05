@@ -61,7 +61,6 @@ img{
 }
 
 .title-services{
-  margin-bottom: 70px;
   background-image:url(../img/bacground.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,7 +125,8 @@ img{
 }
 
 .title-partner{
-  padding-bottom: 40px;
+  padding-top:71px;
+  padding-bottom: 57px;
   /* display: none; */
 }
 
