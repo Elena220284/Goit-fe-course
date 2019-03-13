@@ -142,7 +142,7 @@ background-color: rgb(26, 188, 156);
  
 .button:hover{
  opacity: 0.651;
-cursor: pointer;
+ cursor: pointer;
 }
 
 .button-left{
@@ -156,7 +156,6 @@ right: 0;
 .fas{
   font-size: 60px;
 }
-
 
 .image-slider{
   width: 100%;
@@ -227,7 +226,7 @@ right: 10px;
 bottom: 10px;
 background-color: rgba(0, 0, 0, 0.55);
 display: none;
- }
+}
 
  .icons{
 position: absolute;
